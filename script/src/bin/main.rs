@@ -146,10 +146,6 @@ fn generate_test_trace(
     generate_trace::<100>(log_n_instances, &inputs)
 }
 
-fn fibonacci_constraint_evaluator<const N: u32>(eval: AssertEvaluator<'_>) {
-    WideFibonacciEval::<100> { log_n_rows: N }.evaluate(eval);
-}
-
 fn generate_proof(log_n_instances: u32) -> StarkProof<Blake2sMerkleHasher> {
     let config = PcsConfig::default();
     // Precompute twiddles.
