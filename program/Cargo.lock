@@ -644,6 +644,7 @@ dependencies = [
 [[package]]
 name = "stwo-verifier-no-std"
 version = "0.1.0"
+source = "git+https://github.com/trade-vex/stwo-verifier-no-std.git#342b118523aefeb01a68fb4f3e526c13552db6e9"
 dependencies = [
  "array-init",
  "blake2",
