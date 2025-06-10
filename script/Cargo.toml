@@ -18,14 +18,10 @@ path = "src/bin/vkey.rs"
 
 [dependencies]
 sp1-sdk = "5.0.0"
-serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
 serde = { version = "1.0.200", default-features = false, features = ["derive"] }
 clap = { version = "4.0", features = ["derive", "env"] }
 tracing = "0.1.40"
-hex = "0.4.3"
-alloy-sol-types = { workspace = true }
-fibonacci-lib = { path = "../lib" }
+stwo-prover = { git = "https://github.com/starkware-libs/stwo", rev = "a194fad", features = ["parallel"] }
 dotenv = "0.15.0"
-
-[build-dependencies]
-sp1-build = "5.0.0"
+itertools = { version = "0.12"}
+num-traits = { version = "0.2.19" }
