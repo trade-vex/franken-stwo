@@ -18,6 +18,9 @@ path = "src/bin/vkey.rs"
 
 [dependencies]
 sp1-sdk = "5.0.0"
+rand = "0.8.5"
+vex-prover = { git = "https://github.com/trade-vex/vex-prover.git", rev = "a4ad3ca" }
+proc-macro2 = "=1.0.95"
 serde = { version = "1.0.200", default-features = false, features = ["derive"] }
 clap = { version = "4.0", features = ["derive", "env"] }
 tracing = "0.1.40"
